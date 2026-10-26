@@ -40,13 +40,20 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
         <div className="mt-10">
           <CaseStudy project={p} />
         </div>
+        <div className="mt-10 flex flex-wrap items-center gap-4">
         {p.liveUrl ? (
-          <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" className="mt-10 inline-block rounded-full border-2 border-ink bg-magenta px-6 py-3 font-bold text-on-accent shadow-[4px_4px_0_var(--ink)]">
+          <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-block rounded-full border-2 border-ink bg-magenta px-6 py-3 font-bold text-on-accent shadow-[4px_4px_0_var(--ink)]">
             Visit live site ↗
           </a>
         ) : (
-          <p className="mt-10 text-muted">TODO: add a live link in src/data/projects.ts</p>
+          <p className="text-muted">TODO: add a live link in src/data/projects.ts</p>
         )}
+          {p.repoUrl && (
+            <a href={p.repoUrl} target="_blank" rel="noopener noreferrer" className="inline-block rounded-full border-2 border-ink px-6 py-3 font-bold hover:bg-ink hover:text-stage">
+              View repo ↗
+            </a>
+          )}
+        </div>
       </article>
     </Shell>
   );

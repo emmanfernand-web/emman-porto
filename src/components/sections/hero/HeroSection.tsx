@@ -1,6 +1,5 @@
 import { profile } from "@/data/profile";
 import { Button } from "@/components/ui/Button";
-import { Spotlight } from "./Spotlight";
 import { Typewriter } from "./Typewriter";
 import { AnimatedName } from "./AnimatedName";
 
@@ -59,7 +58,6 @@ export function HeroSection() {
         ↓ scroll to play the set
       </p>
 
-      <Spotlight targetId="top" />
     </section>
   );
 }

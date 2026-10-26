@@ -45,7 +45,7 @@ function Track({ p }: { p: Project }) {
             <span className="font-display text-6xl leading-none opacity-80" style={{ color: c }}>
               {p.track}
             </span>
-            <span className="mt-1 font-display text-3xl uppercase leading-tight sm:text-4xl">{p.title}</span>
+            <span className="mt-1 break-words font-display text-3xl uppercase leading-tight sm:text-4xl">{p.title}</span>
             <span className="mt-1 text-sm font-bold text-muted">
               {p.kind} · {p.year}
             </span>
@@ -79,6 +79,11 @@ function Track({ p }: { p: Project }) {
                     </a>
                   ) : (
                     <span className="rounded-full border-2 border-dashed border-line px-4 py-2 text-sm text-muted">TODO: add live link</span>
+                  )}
+                  {p.repoUrl && (
+                    <a href={p.repoUrl} target="_blank" rel="noopener noreferrer" className="rounded-full border-2 border-line px-4 py-2 font-bold hover:border-magenta">
+                      Repo ↗
+                    </a>
                   )}
                   <Link href={`/projects/${p.slug}`} className="rounded-full border-2 border-line px-4 py-2 font-bold hover:border-magenta">
                     Full page →

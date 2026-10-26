@@ -66,4 +66,28 @@ export const projects: Project[] = [
     image: "/projects/omb.svg",
     imageAlt: "Screenshot placeholder of the OMB UMN 2026 NEXT website",
   },
+  {
+    slug: "i-knit-it",
+    track: "04",
+    title: "i knit it!",
+    kind: "Landing page & catalogue",
+    role: "Designer & Web Developer (built from scratch to live)",
+    year: "2026",
+    accent: "lime",
+    summary:
+      "Landing page and catalogue for \"i knit it!\", a handmade crochet brand known for amigurumi and custom orders. Visitors can get to know the brand and order straight through WhatsApp or Instagram.",
+    problem:
+      "A small handmade brand needed a way to introduce itself and make ordering easy for students and young people looking for unique, personalised gifts and accessories. Built as a management course assignment.",
+    whatIDid: [
+      "Turned the brand guideline (yellow star logo, blue, pink, yellow and green palette) into a cheerful, warm interface.",
+      "Built the brand story, a 3-product pre-order catalogue plus a custom order card, a 3-step ordering guide and an Instagram call to action.",
+      "Made it responsive for phones and laptops, then took it live on Vercel.",
+    ],
+    stack: ["TODO: stack"],
+    result: "Live and ready for customers to order via WhatsApp or Instagram.",
+    liveUrl: "https://iknitit.vercel.app/",
+    repoUrl: "https://github.com/emmanfernand-web/iknitit",
+    image: "/projects/iknitit.svg", // TODO: replace with a real screenshot
+    imageAlt: "Screenshot placeholder of the i knit it! website",
+  },
 ];

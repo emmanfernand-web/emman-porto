@@ -12,6 +12,7 @@ export type Project = {
   stack: string[];
   result: string;
   liveUrl?: string;
+  repoUrl?: string;
   image: string;
   imageAlt: string;
 };

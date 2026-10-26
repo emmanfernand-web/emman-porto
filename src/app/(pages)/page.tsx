@@ -17,11 +17,16 @@ export default function Home() {
     <Shell>
       <CurtainIntro />
       <HeroSection />
-      <GuitarStrings />
+      {/* Interactive extras: hidden on phones */}
+      <div className="hidden md:block">
+        <GuitarStrings />
+      </div>
       <SetlistSection />
       <TourSection />
       <BackstageSection />
-      <MixerSection />
+      <div className="hidden md:block">
+        <MixerSection />
+      </div>
       <ContactSection />
     </Shell>
   );
