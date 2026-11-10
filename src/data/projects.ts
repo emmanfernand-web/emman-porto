@@ -90,4 +90,31 @@ export const projects: Project[] = [
     image: "/projects/iknitit.svg", // TODO: replace with a real screenshot
     imageAlt: "Screenshot placeholder of the i knit it! website",
   },
+  {
+    slug: "photo-to-webp-converter",
+    track: "05",
+    title: "Photo-to-WebP Converter",
+    kind: "Browser-based conversion tool",
+    role: "Creator & Developer",
+    year: "2026",
+    accent: "cyan",
+    summary:
+      "A browser-based image-to-WebP conversion tool featuring batch processing, adjustable output quality, image resizing, before-and-after preview, and ZIP export.",
+    problem:
+      "Converting photos to WebP often requires uploading private files to third-party servers or configuring complex command-line tools. Users needed a fast, zero-upload tool directly in the browser with instant visual comparison.",
+    whatIDid: [
+      "Engineered client-side image conversion using OffscreenCanvas in Web Workers with an HTML Canvas fallback for private, on-device processing.",
+      "Implemented batch image conversion with per-file status indicators, queue management, cancellation, and retry handling.",
+      "Built adjustable output quality controls and dimension resizing presets with aspect-ratio preservation and upscale protection.",
+      "Developed an interactive before-and-after comparison slider to visually inspect compression fidelity and file-size savings.",
+      "Integrated client-side ZIP archive packaging using JSZip for one-click bulk export alongside individual WebP downloads.",
+    ],
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Web Workers", "Canvas API", "JSZip"],
+    result:
+      "Delivered 100% private, client-side batch conversions with zero server uploads, verified with unit tests and Playwright accessibility suites.",
+    liveUrl: undefined,
+    repoUrl: "https://github.com/emmanfernand-web/emman_webly",
+    image: "/projects/photo-to-webp-converter.webp",
+    imageAlt: "Screenshot of the Photo-to-WebP Converter web application interface",
+  },
 ];
